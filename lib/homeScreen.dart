@@ -25,11 +25,22 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          Container(
-            height: (altura) - appBar_altura - statusBar_altura,
-            width: largura ,
-            color: Colors.red,
-          ),
+          Row(
+            children: [
+              Container(
+                height: (altura) - appBar_altura - statusBar_altura,
+                width: largura /2,
+                color: Colors.red,
+              ),
+              Container(
+                height: (altura) - appBar_altura - statusBar_altura,
+                width: largura /2,
+                color: Colors.green,
+              ),
+
+            ],
+          )
+
         ],
       ),
     );
